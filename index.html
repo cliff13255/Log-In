@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(45deg ,purple ,blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .login ,#log{
+        margin-bottom: 20px;
+        background-color: whitesmoke;
+        box-shadow:0px 0px 12px 12px white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .psd{
+        display: flex;
+        flex-direction: column;
+    }
+    .lib{
+        background-color: rgb(241, 93, 93);
+        box-shadow:0px 0px 12px 12px white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #details{
+        margin-top: 20px;
+        background-color: aqua;
+        box-shadow:0px 0px 6px 6px white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+
+</style>
+<body >
+    <h1>Library small system</h1>
+    <div class="cont">
+    <form class="login" style="display: none;">
+        <h1>Registration Form</h1>
+        <label for="RegNo">Enter Registration No.:</label><br>
+        <input type="text" id="RegNo" required><br><br>
+
+        <label for="name">Enter name:</label><br>
+        <input type="text" id="name" required><br><br>
+
+<div class="psd">
+        <label for="pdw">Enter Password:</label><br>
+        <input type="password"  id="pdw" required><button id="check">open</button><br><br>
+</div><br>
+
+      <button type="submit">save</button>
+    </form>
+
+    <form id="log">
+        <h1>log in</h1>
+        <p id="conf" style="background-color: aquamarine;font-weight: bold;"></p>
+        <label for="logReg">Reg No.:</label><br>
+        <input type="text" id="logReg"><br><br>
+
+        <label for="logPwd">Password:</label><br>
+        <input type="password" id="logPwd"><button id="checkLog">open</button>
+        <br>
+
+
+        <br><br>
+        <button type="submit">Log in</button><br><br>
+        <button id="registar">Registar</button>
+    </form>
+
+    <form class="lib" id="lib-form" style="display: none;">
+        <h2>Library form</h2>
+        <label for="libName">Enter Your name:</label><br>
+        <input type="text" id="libName" required><br>
+
+        <label for="reg">Enter RegNo.:</label><br>
+        <input type="text" id="reg" required><br><br>
+
+        <label for="book-name">Enter the book Name:</label><br>
+        <input type="text" id="book-name" placeholder="Book name..." required><br><br>
+
+        <label for="day">Enter date taken:</label><br>
+        <input type="date" id="day" placeholder="Date..." required><br>
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+    <div id="details" style="display: none;">
+
+    </div>
+    </div>
+    <script src="lib.js"></script>
+</body>
+</html>
